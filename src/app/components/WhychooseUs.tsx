@@ -177,7 +177,7 @@ export default function WhyChooseUs() {
               <p className="text-sm text-muted-foreground mt-1">Book a free home survey — no obligation, no pressure.</p>
             </div>
             <div className="flex items-center gap-3 shrink-0">
-              <Link href="/homepage#contact" className="btn-primary">
+              <Link href="/#contact" className="btn-primary">
                 Book Free Survey
                 <Icon name="ArrowRightIcon" size={16} />
               </Link>

@@ -15,45 +15,45 @@ interface Config {
 
 // ─── Data ────────────────────────────────────────────────────────────────────
 const windowTypes = [
-  { id: 'tilt-turn',        label: 'Tilt & Turn',     desc: 'Dual-opening, secure',       basePrice: 750  },
-  { id: 'casement-classic', label: 'Classic Casement', desc: 'Side-hinged, versatile',     basePrice: 550  },
-  { id: 'sliding-2track',   label: 'Sliding 2-Track',  desc: 'Space-saving, smooth glide', basePrice: 400  },
-  { id: 'french-casement',  label: 'French Casement',  desc: 'Double-leaf, no centre post',basePrice: 650  },
-  { id: 'fixed-picture',    label: 'Fixed Picture',    desc: 'Maximum glazed area',        basePrice: 500  },
-  { id: 'bay-window',       label: 'Bay Window',       desc: 'Panoramic projection',       basePrice: 600  },
-  { id: 'louvre',           label: 'Louvre Vent',      desc: 'Angled blades, airflow',     basePrice: 550  },
+  { id: 'tilt-turn', label: 'Tilt & Turn', desc: 'Dual-opening, secure', basePrice: 750 },
+  { id: 'casement-classic', label: 'Classic Casement', desc: 'Side-hinged, versatile', basePrice: 550 },
+  { id: 'sliding-2track', label: 'Sliding 2-Track', desc: 'Space-saving, smooth glide', basePrice: 400 },
+  { id: 'french-casement', label: 'French Casement', desc: 'Double-leaf, no centre post', basePrice: 650 },
+  { id: 'fixed-picture', label: 'Fixed Picture', desc: 'Maximum glazed area', basePrice: 500 },
+  { id: 'bay-window', label: 'Bay Window', desc: 'Panoramic projection', basePrice: 600 },
+  { id: 'louvre', label: 'Louvre Vent', desc: 'Angled blades, airflow', basePrice: 550 },
 ];
 
 const doorTypes = [
-  { id: 'lift-slide',    label: 'Lift & Slide',      desc: 'Large-format, effortless',   basePrice: 2500 },
-  { id: 'upvc-door',     label: 'UPVC Door',         desc: 'Insulated, secure entry',    basePrice: 800  },
-  { id: 'french-door',   label: 'French Door',       desc: 'Double-leaf elegance',       basePrice: 700  },
-  { id: 'folding-door',  label: 'Bi-fold Door',      desc: 'Full-width opening',         basePrice: 1200 },
+  { id: 'lift-slide', label: 'Lift & Slide', desc: 'Large-format, effortless', basePrice: 2500 },
+  { id: 'upvc-door', label: 'UPVC Door', desc: 'Insulated, secure entry', basePrice: 800 },
+  { id: 'french-door', label: 'French Door', desc: 'Double-leaf elegance', basePrice: 700 },
+  { id: 'folding-door', label: 'Bi-fold Door', desc: 'Full-width opening', basePrice: 1200 },
 ];
 
 const glassTypes = [
-  { id: 'double',   label: 'Double Glazed',    desc: 'Standard · Low-E coating',   multiplier: 1.00 },
-  { id: 'triple',   label: 'Triple Glazed',    desc: 'Premium · SHGC 0.25',        multiplier: 1.35 },
-  { id: 'acoustic', label: 'Acoustic',         desc: 'Noise-focused · 42 dB',      multiplier: 1.55 },
-  { id: 'solar',    label: 'Solar Control',    desc: 'UV filter + heat block',      multiplier: 1.45 },
-  { id: 'tinted',   label: 'Tinted Glass',     desc: 'Privacy + solar control',    multiplier: 1.30 },
-  { id: 'frosted',  label: 'Frosted / Obscure',desc: 'Bathroom & privacy use',     multiplier: 1.20 },
+  { id: 'double', label: 'Double Glazed', desc: 'Standard · Low-E coating', multiplier: 1.00 },
+  { id: 'triple', label: 'Triple Glazed', desc: 'Premium · SHGC 0.25', multiplier: 1.35 },
+  { id: 'acoustic', label: 'Acoustic', desc: 'Noise-focused · 42 dB', multiplier: 1.55 },
+  { id: 'solar', label: 'Solar Control', desc: 'UV filter + heat block', multiplier: 1.45 },
+  { id: 'tinted', label: 'Tinted Glass', desc: 'Privacy + solar control', multiplier: 1.30 },
+  { id: 'frosted', label: 'Frosted / Obscure', desc: 'Bathroom & privacy use', multiplier: 1.20 },
 ];
 
 const frameColors = [
-  { id: 'white',      label: 'Pearl White',  hex: '#F5F5F0', border: '#D1CEC8', multiplier: 1.00 },
-  { id: 'cream',      label: 'Ivory Cream',  hex: '#EDE8DC', border: '#CFC9BC', multiplier: 1.00 },
-  { id: 'anthracite', label: 'Anthracite',   hex: '#3C3C3C', border: '#282828', multiplier: 1.12 },
-  { id: 'black',      label: 'Jet Black',    hex: '#1A1A1A', border: '#0D0D0D', multiplier: 1.15 },
-  { id: 'woodgrain',  label: 'Teak Grain',   hex: '#A0784A', border: '#8A6438', multiplier: 1.18 },
-  { id: 'grey',       label: 'Slate Grey',   hex: '#7A8590', border: '#626E78', multiplier: 1.08 },
-  { id: 'champagne',  label: 'Champagne',    hex: '#C8B89A', border: '#B0A080', multiplier: 1.10 },
-  { id: 'bronze',     label: 'Bronze',       hex: '#7B5E3A', border: '#5E4520', multiplier: 1.14 },
+  { id: 'white', label: 'Pearl White', hex: '#F5F5F0', border: '#D1CEC8', multiplier: 1.00 },
+  { id: 'cream', label: 'Ivory Cream', hex: '#EDE8DC', border: '#CFC9BC', multiplier: 1.00 },
+  { id: 'anthracite', label: 'Anthracite', hex: '#3C3C3C', border: '#282828', multiplier: 1.12 },
+  { id: 'black', label: 'Jet Black', hex: '#1A1A1A', border: '#0D0D0D', multiplier: 1.15 },
+  { id: 'woodgrain', label: 'Teak Grain', hex: '#A0784A', border: '#8A6438', multiplier: 1.18 },
+  { id: 'grey', label: 'Slate Grey', hex: '#7A8590', border: '#626E78', multiplier: 1.08 },
+  { id: 'champagne', label: 'Champagne', hex: '#C8B89A', border: '#B0A080', multiplier: 1.10 },
+  { id: 'bronze', label: 'Bronze', hex: '#7B5E3A', border: '#5E4520', multiplier: 1.14 },
 ];
 
 const productCategories = [
   { id: 'windows', label: 'Windows', icon: 'WindowIcon' },
-  { id: 'doors',   label: 'Doors',   icon: 'HomeIcon'   },
+  { id: 'doors', label: 'Doors', icon: 'HomeIcon' },
 ];
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
@@ -65,7 +65,7 @@ function toSqFt(widthMm: number, heightMm: number): number {
 // ─── Price Calculator (per sq ft) ─────────────────────────────────────────────
 function calcPrice(config: Config): number {
   const allTypes = [...windowTypes, ...doorTypes];
-  const type  = allTypes.find((t) => t.id === config.windowType);
+  const type = allTypes.find((t) => t.id === config.windowType);
   const glass = glassTypes.find((g) => g.id === config.glassType);
   const color = frameColors.find((c) => c.id === config.frameColor);
   if (!type || !glass || !color) return 0;
@@ -113,26 +113,26 @@ function AnimatedPrice({ price }: { price: number }) {
 
 // ─── Window Preview SVG ───────────────────────────────────────────────────────
 function WindowPreview({ config }: { config: Config }) {
-  const color  = frameColors.find((c) => c.id === config.frameColor) || frameColors[0];
-  const frameW = Math.min(220, Math.max(140, config.width  / 8));
+  const color = frameColors.find((c) => c.id === config.frameColor) || frameColors[0];
+  const frameW = Math.min(220, Math.max(140, config.width / 8));
   const frameH = Math.min(260, Math.max(160, config.height / 8));
   const frameStroke = 10;
   const svgW = frameW + 60;
   const svgH = frameH + 80;
 
   const glassColor =
-    config.glassType === 'solar'    ? 'rgba(180,210,200,0.45)' :
-    config.glassType === 'acoustic' ? 'rgba(200,215,240,0.45)' :
-    config.glassType === 'tinted'   ? 'rgba(100,140,180,0.55)' :
-    config.glassType === 'frosted'  ? 'rgba(220,225,235,0.75)' :
-                                      'rgba(210,225,245,0.45)';
+    config.glassType === 'solar' ? 'rgba(180,210,200,0.45)' :
+      config.glassType === 'acoustic' ? 'rgba(200,215,240,0.45)' :
+        config.glassType === 'tinted' ? 'rgba(100,140,180,0.55)' :
+          config.glassType === 'frosted' ? 'rgba(220,225,235,0.75)' :
+            'rgba(210,225,245,0.45)';
 
-  const isSash    = config.windowType === 'sliding-2track';
+  const isSash = config.windowType === 'sliding-2track';
   const isTiltTurn = config.windowType === 'tilt-turn';
-  const isBay     = config.windowType === 'bay-window';
-  const isLouvre  = config.windowType === 'louvre';
+  const isBay = config.windowType === 'bay-window';
+  const isLouvre = config.windowType === 'louvre';
   const isFrenchCasement = config.windowType === 'french-casement';
-  const isDoor    = ['lift-slide', 'upvc-door', 'french-door', 'folding-door'].includes(config.windowType);
+  const isDoor = ['lift-slide', 'upvc-door', 'french-door', 'folding-door'].includes(config.windowType);
 
   return (
     <div className="flex flex-col items-center gap-4">
@@ -181,12 +181,12 @@ function WindowPreview({ config }: { config: Config }) {
           <>
             <line
               x1={30 + frameStroke + 4} y1={20 + frameH - frameStroke - 4}
-              x2={30 + frameW / 2}      y2={20 + frameStroke + 4}
+              x2={30 + frameW / 2} y2={20 + frameStroke + 4}
               stroke={color.border} strokeWidth={1.5} strokeDasharray="4 3"
             />
             <line
               x1={30 + frameW - frameStroke - 4} y1={20 + frameH - frameStroke - 4}
-              x2={30 + frameW / 2}               y2={20 + frameH / 2}
+              x2={30 + frameW / 2} y2={20 + frameH / 2}
               stroke={color.border} strokeWidth={1.5} strokeDasharray="4 3"
             />
           </>
@@ -284,41 +284,51 @@ function QuoteForm({
     setLoading(true);
 
     const allTypes = [...windowTypes, ...doorTypes];
+
+    // Prepare the exact keys the API route expects
     const dataToSubmit = {
-      name:         form.name,
-      phone:        form.phone,
-      email:        form.email,
-      city:         form.city,
+      name: form.name,
+      phone: form.phone,
+      email: form.email,
+      city: form.city,
       propertyType: form.propertyType,
-      quantity:     form.quantity,
-      timeline:     form.timeline,
-      notes:        form.notes,
-      product:      allTypes.find((t) => t.id === config.windowType)?.label ?? config.windowType,
-      glass:        glassTypes.find((g) => g.id === config.glassType)?.label ?? config.glassType,
-      frameColor:   frameColors.find((c) => c.id === config.frameColor)?.label ?? config.frameColor,
-      width:        config.width,
-      height:       config.height,
-      areaSqFt:     toSqFt(config.width, config.height).toFixed(2),
+      quantity: form.quantity,
+      timeline: form.timeline,
+      notes: form.notes,
+      product: allTypes.find((t) => t.id === config.windowType)?.label ?? config.windowType,
+      glass: glassTypes.find((g) => g.id === config.glassType)?.label ?? config.glassType,
+      frameColor: frameColors.find((c) => c.id === config.frameColor)?.label ?? config.frameColor,
+      width: config.width,
+      height: config.height,
+      areaSqFt: toSqFt(config.width, config.height).toFixed(2),
       pricePerUnit: price,
       totalEstimate: price * parseInt(form.quantity || '1'),
-      date:         new Date().toLocaleString('en-IN'),
     };
 
     try {
-      const response = await fetch('https://api.sheetbest.com/sheets/e5465445-5d26-43e1-b57b-7583dd9dbdc6', {
+      const response = await fetch('/api/quote', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(dataToSubmit),
       });
 
+      console.log('API Response Status:', response.status);
+
+      if (!response.ok) {
+        const errorText = await response.text(); // Get the HTML text
+        console.log(errorText); // This will show you if it's a 404, 500, or a Redirect
+        throw new Error('Check console for HTML error');
+      }
+
       if (response.ok) {
         setSubmitted(true);
       } else {
-        throw new Error('Failed to sync with Google Sheets');
+        const errorData = await response.json();
+        throw new Error(errorData.error || 'Failed to sync with Google Sheets');
       }
-    } catch (error) {
+    } catch (error: any) {
       console.error('Submission Error:', error);
-      alert('Service is temporarily busy. Please try again or reach out via WhatsApp.');
+      alert(error.message || 'Service is temporarily busy. Please try again or reach out via WhatsApp.');
     } finally {
       setLoading(false);
     }
@@ -327,8 +337,8 @@ function QuoteForm({
   const allTypes = [...windowTypes, ...doorTypes];
   const colorLabel = frameColors.find((c) => c.id === config.frameColor)?.label;
   const glassLabel = glassTypes.find((g) => g.id === config.glassType)?.label;
-  const typeLabel  = allTypes.find((t) => t.id === config.windowType)?.label;
-  const areaSqFt   = toSqFt(config.width, config.height).toFixed(2);
+  const typeLabel = allTypes.find((t) => t.id === config.windowType)?.label;
+  const areaSqFt = toSqFt(config.width, config.height).toFixed(2);
 
   const inputClass =
     'w-full h-11 px-4 rounded-xl border border-border/80 bg-white text-foreground text-sm placeholder:text-muted-foreground/60 focus:outline-none focus:ring-2 focus:ring-accent/40 focus:border-accent transition-all duration-200';
@@ -377,7 +387,7 @@ function QuoteForm({
                 <h3 className="text-xl font-800 text-foreground">Quote request sent!</h3>
                 <p className="text-sm text-muted-foreground mt-2 leading-relaxed">
                   Thank you, {form.name || 'there'}! A Keepexa Interior specialist will contact you within 2 hours
-                  to confirm your quote and arrange a free home survey in {form.city || 'your city'}.
+                  to confirm your quote and arrange a free home survey.
                 </p>
               </div>
               <div className="w-full p-4 rounded-2xl bg-secondary/60 border border-border/60 text-left">
@@ -555,9 +565,9 @@ export default function ConfiguratorMain() {
   const [category, setCategory] = useState<string>('windows');
   const [config, setConfig] = useState<Config>({
     windowType: 'tilt-turn',
-    width:      1200,
-    height:     1400,
-    glassType:  'double',
+    width: 1200,
+    height: 1400,
+    glassType: 'double',
     frameColor: 'white',
   });
   const [quoteOpen, setQuoteOpen] = useState(false);
@@ -568,9 +578,9 @@ export default function ConfiguratorMain() {
   const ref = useRef<HTMLDivElement>(null);
   const inView = useInView(ref, { once: true });
 
-  const selectedColor  = frameColors.find((c) => c.id === config.frameColor) || frameColors[0];
-  const currentTypes   = category === 'windows' ? windowTypes : doorTypes;
-  const selectedType   = [...windowTypes, ...doorTypes].find((t) => t.id === config.windowType);
+  const selectedColor = frameColors.find((c) => c.id === config.frameColor) || frameColors[0];
+  const currentTypes = category === 'windows' ? windowTypes : doorTypes;
+  const selectedType = [...windowTypes, ...doorTypes].find((t) => t.id === config.windowType);
 
   const handleCategoryChange = (cat: string) => {
     setCategory(cat);
@@ -596,11 +606,10 @@ export default function ConfiguratorMain() {
               <button
                 key={cat.id}
                 onClick={() => handleCategoryChange(cat.id)}
-                className={`flex items-center gap-2 px-4 sm:px-5 py-2.5 rounded-xl text-sm font-700 transition-all duration-200 ${
-                  category === cat.id
+                className={`flex items-center gap-2 px-4 sm:px-5 py-2.5 rounded-xl text-sm font-700 transition-all duration-200 ${category === cat.id
                     ? 'bg-white text-primary shadow-soft border border-border/60'
                     : 'text-muted-foreground hover:text-foreground'
-                }`}
+                  }`}
               >
                 <Icon name={cat.icon as 'WindowIcon'} size={16} />
                 {cat.label}
@@ -684,11 +693,10 @@ export default function ConfiguratorMain() {
                     <button
                       key={type.id}
                       onClick={() => setConfig({ ...config, windowType: type.id })}
-                      className={`p-3 sm:p-4 rounded-2xl border-2 text-left transition-all duration-200 ${
-                        config.windowType === type.id
+                      className={`p-3 sm:p-4 rounded-2xl border-2 text-left transition-all duration-200 ${config.windowType === type.id
                           ? 'border-primary bg-primary/5'
                           : 'border-border/60 hover:border-accent/60 bg-background'
-                      }`}
+                        }`}
                     >
                       <div className="flex items-start justify-between gap-1">
                         <p className={`text-sm font-700 ${config.windowType === type.id ? 'text-primary' : 'text-foreground'}`}>
@@ -714,7 +722,7 @@ export default function ConfiguratorMain() {
                 </div>
                 <div className="flex flex-col gap-6">
                   {[
-                    { label: 'Width',  key: 'width'  as const, min: 400, max: 3000, unit: 'mm' },
+                    { label: 'Width', key: 'width' as const, min: 400, max: 3000, unit: 'mm' },
                     { label: 'Height', key: 'height' as const, min: 400, max: 2400, unit: 'mm' },
                   ].map((dim) => (
                     <div key={dim.key}>
@@ -753,11 +761,10 @@ export default function ConfiguratorMain() {
                     <button
                       key={glass.id}
                       onClick={() => setConfig({ ...config, glassType: glass.id })}
-                      className={`flex flex-col p-3 sm:p-4 rounded-2xl border-2 transition-all duration-200 text-left ${
-                        config.glassType === glass.id
+                      className={`flex flex-col p-3 sm:p-4 rounded-2xl border-2 transition-all duration-200 text-left ${config.glassType === glass.id
                           ? 'border-primary bg-primary/5'
                           : 'border-border/60 hover:border-accent/60 bg-background'
-                      }`}
+                        }`}
                     >
                       <div className="flex items-center justify-between mb-1">
                         <p className={`text-sm font-700 ${config.glassType === glass.id ? 'text-primary' : 'text-foreground'}`}>
@@ -785,11 +792,10 @@ export default function ConfiguratorMain() {
                       title={color.label}
                     >
                       <div
-                        className={`w-9 h-9 sm:w-10 sm:h-10 rounded-xl border-2 transition-all duration-200 shadow-soft group-hover:scale-110 ${
-                          config.frameColor === color.id
+                        className={`w-9 h-9 sm:w-10 sm:h-10 rounded-xl border-2 transition-all duration-200 shadow-soft group-hover:scale-110 ${config.frameColor === color.id
                             ? 'border-primary ring-2 ring-primary/30 scale-110'
                             : 'border-border/60'
-                        }`}
+                          }`}
                         style={{ backgroundColor: color.hex }}
                       />
                       <span className={`text-[9px] sm:text-[10px] font-500 leading-tight text-center ${config.frameColor === color.id ? 'text-primary font-700' : 'text-muted-foreground'}`}>

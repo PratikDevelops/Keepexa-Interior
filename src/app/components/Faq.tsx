@@ -32,7 +32,7 @@ const faqs: Faq[] = [
   {
     id: 'p2',
     category: 'Products',
-    question: 'Are your windows suitable for the Indian climate — heat, monsoons, coastal air?',
+    question: 'Are your windows suitable for the Indian climate: heat, monsoons, and coastal air?',
     answer:
       'Yes. Our profiles are UV-stabilised to perform at surface temperatures up to 65°C, a common reality on Indian exteriors. All gaskets, hardware, and sealants are rated for high-humidity monsoon conditions. For coastal locations, we supply marine-grade stainless hardware to resist salt-air corrosion.',
   },
@@ -48,7 +48,7 @@ const faqs: Faq[] = [
     category: 'Products',
     question: 'Can I choose a colour other than white?',
     answer:
-      'Absolutely. We offer a full RAL colour range via co-extrusion and laminate foil wrapping — popular choices include Anthracite Grey (RAL 7016), Cream (RAL 9001), Black (RAL 9005), and woodgrain effects such as Golden Oak and Dark Walnut. Colour is applied at the factory, not on-site, ensuring uniform finish and durability.',
+      'Absolutely. We offer a full RAL colour range via co-extrusion and laminate foil wrapping. Popular choices include Anthracite Grey (RAL 7016), Cream (RAL 9001), Black (RAL 9005), and woodgrain effects such as Golden Oak and Dark Walnut. Colour is applied at the factory, not on-site, ensuring uniform finish and durability.',
   },
   {
     id: 'p5',
@@ -62,7 +62,7 @@ const faqs: Faq[] = [
   {
     id: 'i1',
     category: 'Installation',
-    question: 'Who carries out the installation — your own team or subcontractors?',
+    question: 'Who carries out the installation: your own team or subcontractors?',
     answer:
       'Every Keepexa Interiors installation is carried out exclusively by our own salaried, certified fitters. We never use subcontractors or third-party labour. This gives us full accountability and consistent workmanship standards across every project in every city we serve.',
   },
@@ -71,21 +71,21 @@ const faqs: Faq[] = [
     category: 'Installation',
     question: 'How long does a typical installation take?',
     answer:
-      'Most residential projects — replacing 6 to 12 windows — are completed in 1 to 3 days. Larger projects or new builds with more complex requirements may take longer. Your project timeline will be confirmed in writing before work begins. We also carry out full site clean-up and weatherproofing as standard.',
+      'Most residential projects - replacing 6 to 12 windows - are completed in 1 to 3 days. Larger projects or new builds with more complex requirements may take longer. Your project timeline will be confirmed in writing before work begins. We also carry out full site clean-up and weatherproofing as standard.',
   },
   {
     id: 'i3',
     category: 'Installation',
     question: 'What cities do you currently serve?',
     answer:
-      'We currently install across Mumbai, Mumbai, Delhi NCR, Bengaluru, Hyderabad, and Chennai, with service centres in each location for ongoing aftercare. We are actively expanding — contact us to confirm availability in your city if it is not listed.',
+      'We currently install across Mumbai, Delhi NCR, Bengaluru, Hyderabad, and Chennai, with service centres in each location for ongoing aftercare. We are actively expanding; contact us to confirm availability in your city if it is not listed.',
   },
   {
     id: 'i4',
     category: 'Installation',
     question: 'Will installation cause major disruption to my home?',
     answer:
-      'We work systematically to minimise disruption — typically completing one room before moving to the next. Our teams lay protective sheeting, remove all packaging and old frames, and leave the site clean at the end of every working day. Most homeowners report less disruption than they anticipated.',
+      'We work systematically to minimise disruption, typically completing one room before moving to the next. Our teams lay protective sheeting, remove all packaging and old frames, and leave the site clean at the end of every working day. Most homeowners report less disruption than they anticipated.',
   },
 
   // Warranty
@@ -94,14 +94,14 @@ const faqs: Faq[] = [
     category: 'Warranty',
     question: 'What does the 10-year warranty cover?',
     answer:
-      'Our 10-year product warranty covers defects in materials and workmanship — including profile deformation, glass seal failure, hardware malfunction, and installation faults. It is transferable to a new owner if you sell your property, adding genuine resale value.',
+      'Our 10-year product warranty covers defects in materials and workmanship, including profile deformation, glass seal failure, hardware malfunction, and installation faults. It is transferable to a new owner if you sell your property, adding genuine resale value.',
   },
   {
     id: 'w2',
     category: 'Warranty',
     question: 'What is the 40-year performance guarantee?',
     answer:
-      'The 40-year guarantee applies specifically to UPVC profile performance — meaning the profiles will not warp, crack, discolour, or structurally degrade within that period under normal use conditions. This is a separate, longer-term assurance on the core material, not on hardware or glazing.',
+      'The 40-year guarantee applies specifically to UPVC profile performance, meaning the profiles will not warp, crack, discolour, or structurally degrade within that period under normal use conditions. This is a separate, longer-term assurance on the core material, not on hardware or glazing.',
   },
   {
     id: 'w3',
@@ -117,7 +117,7 @@ const faqs: Faq[] = [
     category: 'Pricing',
     question: 'How is pricing calculated?',
     answer:
-      'Pricing is based on window size, profile type, glazing specification, colour, and hardware selection. Because we manufacture to order, every quote is specific to your windows. The free home survey produces a fixed, itemised quote — no surprises at invoice stage.',
+      'Pricing is based on window size, profile type, glazing specification, colour, and hardware selection. Because we manufacture to order, every quote is specific to your windows. The free home survey produces a fixed, itemised quote with no surprises at the invoice stage.',
   },
   {
     id: 'pr2',
@@ -140,7 +140,7 @@ const faqs: Faq[] = [
     category: 'After-Sales',
     question: 'What happens if I have a problem after installation?',
     answer:
-      'Contact our aftercare team directly — not a third party or call centre. We have service engineers based in every city we operate in. For warranty-covered issues, we aim to respond within 48 hours and resolve within 5 working days. Non-warranty servicing is also available at a transparent fixed rate.',
+      'Contact our aftercare team directly, not a third party or call centre. We have service engineers based in every city we operate in. For warranty-covered issues, we aim to respond within 48 hours and resolve within 5 working days. Non-warranty servicing is also available at a transparent fixed rate.',
   },
   {
     id: 'a2',

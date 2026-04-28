@@ -7,13 +7,42 @@ import Icon from '@/components/ui/AppIcon';
 export default function ContactSection() {
   const ref = useRef<HTMLDivElement>(null);
   const inView = useInView(ref, { once: true, margin: '-60px' });
+  
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false); // Added loading state
   const [form, setForm] = useState({ name: '', email: '', phone: '', message: '' });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  // --- API SUBMISSION LOGIC ---
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
+    setLoading(true);
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(form),
+      });
+
+      console.log('API Response Status:', response.status);
+      console.log('API Response Headers:', response);
+
+      if (response.ok) {
+        setSubmitted(true);
+      } else {
+        const errorData = await response.json();
+        alert(`Error: ${errorData.error || 'Failed to send message'}`);
+      }
+    } catch (error) {
+      console.error('Submission error:', error);
+      alert('Network error. Please try again later.');
+    } finally {
+      setLoading(false);
+    }
   };
+  // ----------------------------
 
   const inputClass =
     'w-full h-12 px-4 rounded-xl border border-border/80 bg-white text-foreground text-sm placeholder:text-muted-foreground/60 focus:outline-none focus:ring-2 focus:ring-accent/40 focus:border-accent transition-all duration-200';
@@ -22,6 +51,7 @@ export default function ContactSection() {
     <section id="contact" className="py-16 sm:py-24 lg:py-28 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-start">
+          
           {/* Left: Info */}
           <motion.div
             ref={ref}
@@ -44,11 +74,11 @@ export default function ContactSection() {
               {[
                 { icon: 'PhoneIcon', label: 'Phone', value: '+91 73710 73711', sub: 'Mon–Sat 9am–7pm IST' },
                 { icon: 'EnvelopeIcon', label: 'Email', value: 'admin@keepexa.in', sub: 'Response within 2 hours' },
-                { icon: 'MapPinIcon', label: 'Head Office', value: 'Maruti Niwas, BSNL colony, Opp IIT Main Gate, Powai, Mumbai – 400076, Maharashtra', sub: 'Open Mon–Sat, appointment preferred' },
+                { icon: 'MapPinIcon', label: 'Head Office', value: 'Powai, Mumbai – 400076, Maharashtra', sub: 'Open Mon–Sat' },
               ].map((item) => (
                 <div key={item.label} className="flex items-start gap-3 sm:gap-4 p-4 rounded-2xl bg-secondary/60 border border-border/50">
                   <div className="w-10 h-10 rounded-xl bg-primary/8 flex items-center justify-center shrink-0 mt-0.5">
-                    <Icon name={item.icon as 'PhoneIcon'} size={17} className="text-primary" />
+                    <Icon name={item.icon as any} size={17} className="text-primary" />
                   </div>
                   <div className="min-w-0">
                     <p className="text-xs font-700 text-muted-foreground uppercase tracking-wide">{item.label}</p>
@@ -57,18 +87,6 @@ export default function ContactSection() {
                   </div>
                 </div>
               ))}
-            </div>
-
-            {/* City coverage */}
-            <div className="p-4 rounded-2xl bg-secondary/60 border border-border/50">
-              <p className="text-xs font-700 text-muted-foreground uppercase tracking-wide mb-3">We Serve Across India</p>
-              <div className="flex flex-wrap gap-2">
-                {['Mumbai', 'Delhi NCR', 'Bengaluru', 'Hyderabad', 'Chennai', 'Mumbai', 'Ahmedabad', 'Kolkata', 'Jaipur', 'Chandigarh'].map((city) => (
-                  <span key={city} className="text-xs font-500 text-foreground bg-white px-3 py-1.5 rounded-lg border border-border/60">
-                    {city}
-                  </span>
-                ))}
-              </div>
             </div>
           </motion.div>
 
@@ -84,15 +102,14 @@ export default function ContactSection() {
                 className="flex flex-col items-center justify-center text-center gap-5 py-10"
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.5 }}
               >
                 <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center">
                   <Icon name="CheckIcon" size={28} className="text-primary" />
                 </div>
                 <div>
                   <h3 className="text-xl font-800 text-foreground">Message received.</h3>
-                  <p className="text-sm text-muted-foreground mt-2 leading-relaxed">
-                    Thank You, {form.name || 'there'}! We&apos;ll be in touch within 2 hours during business hours.
+                  <p className="text-sm text-muted-foreground mt-2">
+                    Thank You, {form.name}! We&apos;ll be in touch soon.
                   </p>
                 </div>
                 <button
@@ -115,6 +132,7 @@ export default function ContactSection() {
                       value={form.name}
                       onChange={(e) => setForm({ ...form, name: e.target.value })}
                       required
+                      disabled={loading}
                     />
                   </div>
                   <div>
@@ -125,6 +143,7 @@ export default function ContactSection() {
                       placeholder="+91 73710 73711"
                       value={form.phone}
                       onChange={(e) => setForm({ ...form, phone: e.target.value })}
+                      disabled={loading}
                     />
                   </div>
                 </div>
@@ -137,24 +156,27 @@ export default function ContactSection() {
                     value={form.email}
                     onChange={(e) => setForm({ ...form, email: e.target.value })}
                     required
+                    disabled={loading}
                   />
                 </div>
                 <div>
                   <label className="text-xs font-700 text-muted-foreground uppercase tracking-wide block mb-1.5">Message</label>
                   <textarea
                     className={`${inputClass} h-28 py-3 resize-none`}
-                    placeholder="Tell us about your project — city, number of windows, property type..."
+                    placeholder="Tell us about your project..."
                     value={form.message}
                     onChange={(e) => setForm({ ...form, message: e.target.value })}
+                    disabled={loading}
                   />
                 </div>
-                <button type="submit" className="btn-primary justify-center mt-1">
-                  Send Message
-                  <Icon name="PaperAirplaneIcon" size={16} />
+                <button 
+                  type="submit" 
+                  className={`btn-primary justify-center mt-1 ${loading ? 'opacity-70 cursor-not-allowed' : ''}`}
+                  disabled={loading}
+                >
+                  {loading ? 'Sending...' : 'Send Message'}
+                  {!loading && <Icon name="PaperAirplaneIcon" size={16} />}
                 </button>
-                <p className="text-xs text-center text-muted-foreground">
-                  No spam. Your details are used only to respond to your enquiry.
-                </p>
               </form>
             )}
           </motion.div>
