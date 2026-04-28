@@ -1,5 +1,5 @@
 import { use } from 'react';
-import ProductDetailPage from '@/app/homepage/components/ProductDetails';
+import ProductDetailPage from '@/app/components/ProductDetails';
 
 export function generateStaticParams() {
   return [

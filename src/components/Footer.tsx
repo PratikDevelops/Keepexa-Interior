@@ -21,11 +21,11 @@ const productLinks = [
 ];
 
 const companyLinks = [
-  { label: 'About Us', href: '/homepage#about' },
-  { label: 'Why Choose Us', href: '/homepage#why-choose-us' },
+  { label: 'About Us', href: '/#about' },
+  { label: 'Why Choose Us', href: '/#why-choose-us' },
   { label: 'Gallery', href: '/gallery' },
-  { label: 'FAQ', href: '/homepage#faq' },
-  { label: 'Contact Us', href: '/homepage#contact' },
+  { label: 'FAQ', href: '/#faq' },
+  { label: 'Contact Us', href: '/#contact' },
 ];
 
 const supportLinks = [
@@ -150,7 +150,7 @@ export default function Footer() {
                 <Icon name="ArrowRightIcon" size={15} />
               </Link>
               <Link
-                href="/homepage#contact"
+                href="/#contact"
                 className="whitespace-nowrap px-5 py-2.5 rounded-xl border border-border/80 text-sm font-600 text-foreground hover:bg-secondary/60 transition-colors"
               >
                 Talk to an Expert
