@@ -64,7 +64,7 @@ export default function AboutSection() {
               Getting windows right for modern Indian homes.
             </h2>
             <p className="text-base text-muted-foreground leading-relaxed">
-              Keepexa Interior was founded with a simple goal to bring high-performance UPVC windows to Indian homes without cutting corners. We saw a gap between what quality systems can deliver and what customers actually receive, and we set out to change that.
+              Keepexa Interior's was founded with a simple goal to bring high-performance UPVC windows to Indian homes without cutting corners. We saw a gap between what quality systems can deliver and what customers actually receive, and we set out to change that.
             </p>
             <p className="text-base text-muted-foreground leading-relaxed">
               Today we manufacture and install across India including Mumbai, Delhi, Bengaluru, Hyderabad, Chennai, and beyond, maintaining direct control from production to installation. No subcontractors, no compromises. Every window goes through strict quality checks before it reaches your home.

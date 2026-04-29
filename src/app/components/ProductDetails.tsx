@@ -3,6 +3,7 @@
 import React, { useRef, useState } from 'react';
 import Link from 'next/link';
 import { motion, useInView, AnimatePresence } from 'framer-motion';
+import BeforeAfterSection from './Beforeaftersection';
 
 /* ─────────────────────────────────────────────
    AppImage / Icon
@@ -1128,6 +1129,8 @@ export default function ProductDetailPage({ slug }: { slug: string }) {
               </div>
             </motion.section>
           )}
+
+          <BeforeAfterSection/>
 
           {/* ── CTA Banner ── */}
           <motion.div className="relative overflow-hidden rounded-3xl border border-border/50 bg-card"

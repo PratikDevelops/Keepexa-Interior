@@ -74,7 +74,7 @@ export default function ContactSection() {
               {[
                 { icon: 'PhoneIcon', label: 'Phone', value: '+91 73710 73711', sub: 'Mon–Sat 9am–7pm IST' },
                 { icon: 'EnvelopeIcon', label: 'Email', value: 'admin@keepexa.in', sub: 'Response within 2 hours' },
-                { icon: 'MapPinIcon', label: 'Head Office', value: 'Powai, Mumbai – 400076, Maharashtra', sub: 'Open Mon–Sat' },
+                { icon: 'MapPinIcon', label: 'Head Office', value: 'Maruti Niwas, BSNL colony, Opp IIT Main Gate, Powai, Mumbai – 400076, Maharashtra', sub: 'Open Mon–Sat' },
               ].map((item) => (
                 <div key={item.label} className="flex items-start gap-3 sm:gap-4 p-4 rounded-2xl bg-secondary/60 border border-border/50">
                   <div className="w-10 h-10 rounded-xl bg-primary/8 flex items-center justify-center shrink-0 mt-0.5">

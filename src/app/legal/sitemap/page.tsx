@@ -27,12 +27,12 @@ const groups: SitemapGroup[] = [
     icon: 'HomeIcon',
     color: 'bg-primary/10 text-primary border-primary/15',
     links: [
-      { label: 'Home',              href: '/homepage',              description: 'Overview of Keepexa Interiorproducts and services' },
+      { label: 'Home',              href: '/',              description: 'Overview of Keepexa Interiorproducts and services' },
       { label: 'Gallery',           href: '/gallery',               description: 'Real project photos from our installations' },
-      { label: 'About Us',          href: '/homepage#about',        description: 'Our story, team, and manufacturing facility' },
-      { label: 'Why Choose Us',     href: '/homepage#why-choose-us',description: 'Certifications, guarantees, and differentiators' },
-      { label: 'FAQ',               href: '/homepage#faq',          description: 'Frequently asked questions' },
-      { label: 'Contact Us',        href: '/homepage#contact',      description: 'Get in touch with our team' },
+      { label: 'About Us',          href: '/#about',        description: 'Our story, team, and manufacturing facility' },
+      { label: 'Why Choose Us',     href: '/#why-choose-us',description: 'Certifications, guarantees, and differentiators' },
+      { label: 'FAQ',               href: '/#faq',          description: 'Frequently asked questions' },
+      { label: 'Contact Us',        href: '/#contact',      description: 'Get in touch with our team' },
       { label: 'Product Configurator', href: '/product-configurator', description: 'Design and price your windows online' },
     ],
   },
@@ -41,7 +41,7 @@ const groups: SitemapGroup[] = [
     icon: 'WindowIcon',
     color: 'bg-accent/10 text-accent border-accent/15',
     links: [
-      { label: 'All Products',      href: '/homepage#products',     description: 'Browse our full window and door range' },
+      { label: 'All Products',      href: '/#products',     description: 'Browse our full window and door range' },
       { label: 'Tilt & Turn',       href: '/products/tilt-turn',    description: "Europe's most versatile window, engineered for India" },
       { label: 'Classic Casement',  href: '/products/casement',     description: 'Side-hung sash, full ventilation, timeless profile' },
       { label: 'French Casement',   href: '/products/french-casement', description: 'Double-leaf, no centre post, unobstructed opening' },
@@ -70,8 +70,8 @@ const groups: SitemapGroup[] = [
     icon: 'DocumentTextIcon',
     color: 'bg-emerald-500/10 text-emerald-600 border-emerald-500/15',
     links: [
-      { label: 'Privacy Policy',    href: '/privacy',  description: 'How we collect, use, and protect your data' },
-      { label: 'Terms of Service',  href: '/terms',    description: 'Rules governing use of our services' },
+      { label: 'Privacy Policy',    href: '/legal/privacy-policy',  description: 'How we collect, use, and protect your data' },
+      { label: 'Terms of Service',  href: '/legal/terms-of-service',    description: 'Rules governing use of our services' },
       { label: 'Sitemap',           href: '/sitemap',  description: 'This page — all links in one place' },
     ],
   },
@@ -160,7 +160,7 @@ export default function SitemapPage() {
           >
             <div className="flex items-center gap-3 mb-4">
               <Link
-                href="/homepage"
+                href="/"
                 className="inline-flex items-center gap-1.5 text-xs font-600 text-muted-foreground hover:text-primary transition-colors"
               >
                 <Icon name="ArrowLeftIcon" size={12} />
@@ -221,11 +221,11 @@ export default function SitemapPage() {
             </a>
           </p>
           <div className="flex items-center gap-3">
-            <Link href="/privacy" className="text-xs font-600 text-muted-foreground hover:text-primary transition-colors">
+            <Link href="/legal/privacy-policy" className="text-xs font-600 text-muted-foreground hover:text-primary transition-colors">
               Privacy Policy →
             </Link>
             <span className="w-px h-3 bg-border/60" />
-            <Link href="/terms" className="text-xs font-600 text-muted-foreground hover:text-primary transition-colors">
+            <Link href="/legal/terms-of-service" className="text-xs font-600 text-muted-foreground hover:text-primary transition-colors">
               Terms of Service →
             </Link>
           </div>

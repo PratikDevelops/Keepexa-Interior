@@ -22,7 +22,7 @@ const sections: Section[] = [
     title: 'Acceptance of Terms',
     content: [
       {
-        body: 'By accessing Keepexa Interior.com, requesting a quote, placing an order, or using any of our services, you agree to be bound by these Terms of Service and our Privacy Policy. If you do not agree, please do not use our services. These Terms constitute a legally binding agreement between you and Keepexa Interior Pvt. Ltd., a company incorporated under the Companies Act, 2013, with its registered office at Maruti Niwas, BSNL colony, Opp IIT Main Gate, Powai, Mumbai – 400076, Maharashtra.',
+        body: 'By accessing Keepexa Interior.com, requesting a quote, placing an order, or using any of our services, you agree to be bound by these Terms of Service and our Privacy Policy. If you do not agree, please do not use our services. These Terms constitute a legally binding agreement between you and Keepexa Interior, a company incorporated under the Companies Act, 2013, with its registered office at Maruti Niwas, BSNL colony, Opp IIT Main Gate, Powai, Mumbai – 400076, Maharashtra.',
       },
     ],
   },
@@ -292,7 +292,7 @@ export default function TermsPage() {
               Privacy Policy →
             </Link>
             <span className="w-px h-3 bg-border/60" />
-            <Link href="/sitemap" className="text-xs font-600 text-muted-foreground hover:text-primary transition-colors">
+            <Link href="/legal/sitemap" className="text-xs font-600 text-muted-foreground hover:text-primary transition-colors">
               Sitemap →
             </Link>
           </div>

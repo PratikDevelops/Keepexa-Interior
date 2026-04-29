@@ -357,7 +357,7 @@ export default function Faq() {
                   Speak directly with a Keepexa Interior specialist — not a chatbot, not a call centre.
                 </p>
               </div>
-              <Link href="/homepage#contact" className="btn-primary self-start">
+              <Link href="/#contact" className="btn-primary self-start">
                 Talk to Us
                 <Icon name="ArrowRightIcon" size={15} />
               </Link>

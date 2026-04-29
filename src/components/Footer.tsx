@@ -159,11 +159,10 @@ export default function Footer() {
           </div>
         </FadeUp>
 
-        {/* ── Main content row ── */}
         <div className="py-12 sm:py-16 border-b border-border/50">
           <div className="grid grid-cols-1 lg:grid-cols-[260px_1fr] gap-10 lg:gap-12">
 
-            {/* ── Brand panel ── */}
+
             <FadeUp delay={0.05} className="flex flex-col gap-6">
               {/* Logo */}
               <Link href="/homepage" className="flex items-center gap-2.5 group w-fit">
@@ -267,7 +266,7 @@ export default function Footer() {
         >
           <div className="py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
             <p className="text-xs text-muted-foreground text-center sm:text-left">
-              © {currentYear} Keepexa Interior Pvt. Ltd. All rights reserved. Made with care in Mumbai, India.
+              © {currentYear} Keepexa Interior's. All rights reserved. Made with care in Mumbai, India.
             </p>
 
             <div className="flex items-center gap-4 flex-wrap justify-center">

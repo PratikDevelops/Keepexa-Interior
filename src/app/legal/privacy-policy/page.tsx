@@ -248,7 +248,7 @@ export default function PrivacyPolicyPage() {
               Terms of Service →
             </Link>
             <span className="w-px h-3 bg-border/60" />
-            <Link href="/sitemap" className="text-xs font-600 text-muted-foreground hover:text-primary transition-colors">
+            <Link href="/legal/sitemap" className="text-xs font-600 text-muted-foreground hover:text-primary transition-colors">
               Sitemap →
             </Link>
           </div>

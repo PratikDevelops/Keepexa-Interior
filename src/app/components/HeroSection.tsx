@@ -60,7 +60,7 @@ export default function HeroSection() {
           </h1>
 
           <p className="text-base sm:text-lg text-muted-foreground leading-relaxed font-400 max-w-lg">
-            Keepexa Interior UPVC windows combine acoustic engineering, thermal precision, and architectural elegance built to last 40 years in India's diverse climate, from coastal humidity to extreme heat.
+            Keepexa Interior's UPVC windows combine acoustic engineering, thermal precision, and architectural elegance built to last 40 years in India's diverse climate, from coastal humidity to extreme heat.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3 mt-1">

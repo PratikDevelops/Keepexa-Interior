@@ -25,8 +25,8 @@ export const metadata: Metadata = {
     default: 'Keepexa Interiors — Engineered UPVC Windows',
     template: '%s | Keepexa Interiors' // Allows subpages to have "Gallery | Keepexa Interiors"
   },
-  description: 'Keepexa Interiors crafts premium UPVC windows delivering acoustic silence, thermal efficiency, and architectural elegance for modern UK homes.',
-  keywords: ['UPVC Windows', 'Engineered Windows', 'Keepexa Interiors', 'Acoustic Windows', 'Thermal Efficiency', 'UK Modern Homes'],
+  description: 'Keepexa Interiors crafts premium UPVC windows delivering acoustic silence, thermal efficiency, and architectural elegance for modern Indian homes.',
+  keywords: ['UPVC Windows', 'Engineered Windows', 'Keepexa Interiors', 'Acoustic Windows', 'Thermal Efficiency', 'India Modern Homes'],
   alternates: {
     canonical: '/',
   },
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     siteName: 'Keepexa Interiors',
     images: [
       {
-        url: '/favicon.png', // Ensure you have an OG image in your /public folder (1200x630)
+        url: '/favicon.png', 
         width: 1200,
         height: 630,
         alt: 'Keepexa Interiors Showcase',

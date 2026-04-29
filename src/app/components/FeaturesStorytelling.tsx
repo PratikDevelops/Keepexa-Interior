@@ -145,7 +145,7 @@ export default function FeaturesStorytelling() {
             Every detail engineered to perform.
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground mt-4 max-w-xl mx-auto leading-relaxed">
-            Three performance pillars that set Keepexa Interior apart — engineered specifically for India's demanding climate.
+            Three performance pillars that set Keepexa Interior's apart — engineered specifically for India's demanding climate.
           </p>
         </motion.div>
 

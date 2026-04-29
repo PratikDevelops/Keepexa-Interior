@@ -33,7 +33,6 @@ export async function POST(req: Request) {
 
         return NextResponse.json({ message: 'Success!' }, { status: 200 });
     } catch (error: any) {
-        // This will print the ACTUAL error from Google in your VS Code Terminal
         console.error('Detailed Google Error:', error.response?.data || error.message);
         
         return NextResponse.json(
