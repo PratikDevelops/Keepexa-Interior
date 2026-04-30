@@ -165,7 +165,7 @@ export default function Footer() {
 
             <FadeUp delay={0.05} className="flex flex-col gap-6">
               {/* Logo */}
-              <Link href="/homepage" className="flex items-center gap-2.5 group w-fit">
+              <Link href="/" className="flex items-center gap-2.5 group w-fit">
                 <AppLogo size={140} onClick={() => { }} className="transition-transform duration-300 group-hover:scale-105" />
               </Link>
 

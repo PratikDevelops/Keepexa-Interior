@@ -25,7 +25,7 @@ export default function GalleryHero() {
               Windows that define spaces.
             </h1>
             <p className="text-base text-muted-foreground leading-relaxed">
-              From Victorian sash restorations to contemporary new builds — a selection of PureFrame installations across the UK.
+              From Victorian sash restorations to contemporary new builds — a selection of Keepexa Interior's installations across the UK.
             </p>
           </div>
           <div className="flex items-center gap-4 shrink-0">

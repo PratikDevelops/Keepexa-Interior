@@ -258,15 +258,6 @@ export default function AboutPage() {
                 profile warranty, and installed by the same team that built it. We serve homeowners,
                 architects, and developers across all major Indian cities.
               </p>
-
-              <div className="mt-8 flex flex-wrap gap-3">
-                <Link href="/book-survey" className="btn-primary text-sm">
-                  Book a Free Survey <ArrowRight />
-                </Link>
-                <Link href="/homepage#contact" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl border border-border text-sm font-500 text-foreground hover:bg-secondary/60 transition-colors duration-200">
-                  Get in Touch
-                </Link>
-              </div>
             </motion.div>
 
             <motion.div

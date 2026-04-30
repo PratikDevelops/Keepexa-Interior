@@ -58,7 +58,7 @@ const groups: SitemapGroup[] = [
     color: 'bg-amber-500/10 text-amber-600 border-amber-500/15',
     links: [
       { label: 'Get Free Quote',       href: '/product-configurator', description: 'Start your project with a custom quote' },
-      { label: 'Book Site Survey',     href: '/contact',              description: 'Schedule a free home assessment' },
+      { label: 'Book Site Survey',     href: '/#contact',              description: 'Schedule a free home assessment' },
       { label: 'Installation Guide',   href: '/support/installation', description: 'What to expect during your installation day' },
       { label: 'Care & Maintenance',   href: '/support/maintenance',  description: 'Keeping your windows in peak condition' },
       { label: 'Warranty Policy',      href: '/support/warranty',     description: '10-year frame, 5-year glass, 2-year seal warranty' },

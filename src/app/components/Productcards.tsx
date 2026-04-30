@@ -205,9 +205,9 @@ const categories: Category[] = ['All', 'Casement', 'Sliding', 'Tilt & Turn', 'Fi
 ───────────────────────────────────────────── */
 const badgeStyles: Record<string, string> = {
   popular: 'bg-primary/12 text-primary border-primary/20',
-  new:     'bg-accent/12 text-accent border-accent/20',
+  new: 'bg-accent/12 text-accent border-accent/20',
   premium: 'bg-amber-500/12 text-amber-600 border-amber-500/20',
-  eco:     'bg-emerald-500/12 text-emerald-600 border-emerald-500/20',
+  eco: 'bg-emerald-500/12 text-emerald-600 border-emerald-500/20',
 };
 
 /* ─────────────────────────────────────────────
@@ -257,9 +257,8 @@ function FilterTab({ cat, active, onClick }: { cat: Category; active: boolean; o
   return (
     <button
       onClick={onClick}
-      className={`relative px-4 py-2 rounded-xl text-sm font-500 transition-colors duration-200 ${
-        active ? 'text-primary-foreground' : 'text-muted-foreground hover:text-foreground'
-      }`}
+      className={`relative px-4 py-2 rounded-xl text-sm font-500 transition-colors duration-200 ${active ? 'text-primary-foreground' : 'text-muted-foreground hover:text-foreground'
+        }`}
     >
       {active && (
         <motion.span
@@ -411,14 +410,14 @@ function StandardCard({ product, index, inView }: { product: Product; index: num
       onMouseLeave={() => setHovered(false)}
     >
       {/* Image */}
-      <div className="relative h-44 sm:h-48 overflow-hidden bg-secondary/30 shrink-0">
+      <div className="relative w-full max-w-md h-64 sm:h-80 overflow-hidden bg-secondary/30 shrink-0">
         <AppImage
           src={product.image}
           alt={product.imageAlt}
           fill
-          className={`object-cover transition-transform duration-600 ease-out ${hovered ? 'scale-[1.07]' : 'scale-100'}`}
+          className={`object-cover transition-transform duration-700 ease-out ${hovered ? 'scale-110' : 'scale-100'}`}
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/25 via-transparent to-transparent" />
+        {/* <div className="absolute inset-0 bg-gradient-to-t from-black/25 via-transparent to-transparent" /> */}
 
         {/* Spec strip — slides up on hover */}
         <AnimatePresence>
@@ -440,12 +439,12 @@ function StandardCard({ product, index, inView }: { product: Product; index: num
         </AnimatePresence>
 
         {/* Top badges */}
-        <div className="absolute top-3 left-3 right-3 flex items-start justify-between">
+        {/* <div className="absolute top-3 left-3 right-3 flex items-start justify-between">
           {product.badge ? <Badge label={product.badge.label} variant={product.badge.variant} /> : <span />}
           <span className="text-xs font-500 text-foreground bg-background/95 px-2.5 py-1 rounded-lg border border-border/50 shadow-sm">
             {product.category}
           </span>
-        </div>
+        </div> */}
       </div>
 
       {/* Body */}
@@ -455,13 +454,13 @@ function StandardCard({ product, index, inView }: { product: Product; index: num
           <p className="text-xs font-400 text-muted-foreground mt-1 leading-snug">{product.tagline}</p>
         </div>
 
-        <div className="flex items-center gap-1.5">
+        {/* <div className="flex items-center gap-1.5">
           <Stars rating={product.rating} size="xs" />
           <span className="text-xs font-600 text-foreground">{product.rating}</span>
           <span className="text-xs font-400 text-muted-foreground">· {product.reviews} reviews</span>
-        </div>
+        </div> */}
 
-        <ul className="flex flex-col gap-1.5">
+        {/* <ul className="flex flex-col gap-1.5">
           {product.highlights.slice(0, 3).map((h) => (
             <li key={h} className="flex items-center gap-2 text-xs font-400 text-muted-foreground">
               <div className="w-3.5 h-3.5 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
@@ -470,7 +469,7 @@ function StandardCard({ product, index, inView }: { product: Product; index: num
               {h}
             </li>
           ))}
-        </ul>
+        </ul> */}
 
         <div className="flex items-center justify-between mt-auto pt-3 border-t border-border/50">
           <div>
@@ -495,13 +494,13 @@ export default function ProductCards() {
   const headRef = useRef<HTMLDivElement>(null);
   const gridRef = useRef<HTMLDivElement>(null);
   const headInView = useInView(headRef, { once: true, margin: '-60px' });
-  const gridInView  = useInView(gridRef,  { once: true, margin: '-80px' });
+  const gridInView = useInView(gridRef, { once: true, margin: '-80px' });
 
   const [active, setActive] = useState<Category>('All');
 
   const allFiltered = active === 'All' ? products : products.filter((p) => p.category === active);
-  const featured    = allFiltered.find((p) => p.featured);
-  const rest        = allFiltered.filter((p) => !p.featured);
+  const featured = allFiltered.find((p) => p.featured);
+  const rest = allFiltered.filter((p) => !p.featured);
 
   return (
     <section id="products" className="py-16 sm:py-24 lg:py-32 bg-background">
