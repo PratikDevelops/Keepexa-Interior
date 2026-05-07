@@ -178,7 +178,7 @@ const CONTACT_CARDS = [
   {
     icon: <PhoneIcon className="size-6 text-primary" />,
     title: 'Call or WhatsApp',
-    lines: ['+91 99999 99999', 'Quotes, surveys, support', 'We answer, not a call centre'],
+    lines: ['+91 73710 73711', 'Quotes, surveys, support', 'We answer, not a call centre'],
   },
 ];
 
@@ -252,7 +252,7 @@ export default function AboutPage() {
                 Mumbai-based UPVC window manufacturer,{' '}
                 <span className="text-primary">direct, honest, accountable.</span>
               </h1>
-              <p className="mt-5 text-muted-foreground font-400 text-base sm:text-lg max-w-xl leading-relaxed">
+              <p className="mt-5 text-base font-400 text-muted-foreground max-w-xl leading-relaxed">
                 We design, manufacture, and install UPVC windows and doors from our own factory in Mumbai.
                 No middlemen, no resellers. Every unit is custom-made for your site, backed by a 10-year
                 profile warranty, and installed by the same team that built it. We serve homeowners,
@@ -269,7 +269,7 @@ export default function AboutPage() {
               {STATS.map((s) => (
                 <div key={s.label} className="flex flex-col gap-1 p-5 rounded-2xl bg-card border border-border/60 shadow-sm">
                   <span className="text-2xl sm:text-3xl font-800 text-primary leading-none">{s.value}</span>
-                  <span className="text-sm font-600 text-foreground mt-1">{s.label}</span>
+                  <span className="text-base font-600 text-foreground mt-1">{s.label}</span>
                   <span className="text-xs font-400 text-muted-foreground leading-snug">{s.sub}</span>
                 </div>
               ))}
@@ -297,29 +297,15 @@ export default function AboutPage() {
               </div>
             </FadeUp>
 
-            <FadeUp delay={0.1} className="flex flex-col gap-5 text-base text-muted-foreground font-400 leading-relaxed">
+            <FadeUp delay={0.1} className="flex flex-col gap-4 text-base text-muted-foreground font-400 leading-relaxed">
               <p>
-                The window and door industry in India has a trust problem. Customers are shown showroom samples,
-                given vague quotes, and then handed off to subcontractors who have never seen their site.
-                By the time something goes wrong, nobody answers the phone. Warranties exist on paper but not in practice.
+                The window and door industry in India often struggles with trust. Customers see showroom samples, receive unclear quotes, and end up dealing with subcontractors who are disconnected from the actual site. When issues arise, support is hard to reach and warranties rarely hold up in practice.
               </p>
               <p>
-                We built Keepexa Interiors to fix that. As a direct manufacturer in Mumbai, we control
-                every step from the profiles we source to the crew that installs your windows and the
-                engineer who calls you two weeks later to check everything is right. There is no chain to
-                break because there is only one link.
+                Keepexa Interiors was built to change that. As a direct manufacturer in Mumbai, we manage everything in-house, from sourcing profiles to installation and follow-up. With a single accountable team, there is no gap between promise and delivery.
               </p>
               <p>
-                We operate across Mumbai, Delhi NCR, Bengaluru, Hyderabad, Chennai, Pune, Ahmedabad, and Kolkata.
-                In every city, our installation teams are employed and trained directly by us. Not agencies,
-                not labour contractors. The same quality standard that leaves our Mumbai factory applies on
-                every site across India.
-              </p>
-              <p>
-                We are a young company, and that is actually our advantage. We have no bad habits,
-                no inherited shortcuts, and no legacy processes that put margin ahead of quality.
-                Every decision we make is being made for the first time, with full awareness that
-                our reputation depends entirely on getting it right.
+                We operate across major Indian cities with fully trained, in-house teams ensuring consistent quality everywhere. Being a young company is our strength. We have no legacy shortcuts, only a clear focus on doing things right and earning trust with every project.
               </p>
 
               <div className="border-l-2 border-primary pl-5 py-1 mt-1">
@@ -327,7 +313,7 @@ export default function AboutPage() {
                   "Being new is not a weakness. It means we have everything to prove
                   and nothing to cut corners on."
                 </p>
-                <p className="text-sm font-500 text-muted-foreground mt-2">Keepexa Interiors founding principle</p>
+                <p className="text-xs font-500 text-muted-foreground mt-2">Keepexa Interiors founding principle</p>
               </div>
             </FadeUp>
           </div>
@@ -348,7 +334,7 @@ export default function AboutPage() {
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {WHY_US.map((item, i) => (
                 <FadeUp key={item.title} delay={i * 0.055}>
-                  <div className="flex flex-col gap-4 p-8 rounded-2xl border border-border/60 hover:border-primary/30 hover:bg-secondary/30 hover:shadow-md transition-all duration-200 h-full">
+                  <div className="flex flex-col gap-4 p-8 rounded-2xl bg-card border border-border/60 hover:border-primary/30 hover:bg-secondary/30 hover:shadow-md transition-all duration-200 h-full">
                     <div className="w-10 h-10 rounded-xl bg-primary/8 flex items-center justify-center">
                       {item.icon}
                     </div>
@@ -382,15 +368,15 @@ export default function AboutPage() {
                 <FadeUp key={p.slug} delay={i * 0.04}>
                   <Link
                     href={`/products/${p.slug}`}
-                    className="group flex flex-col gap-2 p-5 rounded-2xl border border-border/60 bg-background hover:border-primary/40 hover:shadow-soft transition-all duration-200 h-full"
+                    className="group flex flex-col gap-2 p-5 rounded-2xl bg-card border border-border/60 hover:border-primary/40 hover:shadow-soft transition-all duration-200 h-full"
                   >
                     <p className="text-base font-700 text-foreground group-hover:text-primary transition-colors duration-200">
                       {p.label}
                     </p>
-                    <p className="text-sm font-400 text-muted-foreground leading-relaxed flex-1">{p.desc}</p>
+                    <p className="text-base font-400 text-muted-foreground leading-relaxed flex-1">{p.desc}</p>
                     <div className="flex items-center justify-between mt-2 pt-3 border-t border-border/40">
-                      <span className="text-sm font-600 text-primary">{p.spec}</span>
-                      <span className="text-sm font-500 text-muted-foreground group-hover:text-primary flex items-center gap-1 transition-colors duration-200">
+                      <span className="text-xs font-600 text-primary">{p.spec}</span>
+                      <span className="text-xs font-500 text-muted-foreground group-hover:text-primary flex items-center gap-1 transition-colors duration-200">
                         View
                         <svg viewBox="0 0 12 12" width="10" height="10" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
                           <path d="M2 6h8M7 3l3 3-3 3" />
@@ -405,9 +391,9 @@ export default function AboutPage() {
             <FadeUp delay={0.25} className="mt-8 flex flex-wrap gap-4 items-center justify-between p-6 rounded-2xl bg-primary/5 border border-primary/15">
               <div>
                 <p className="text-base font-700 text-foreground">Not sure which system is right for your project?</p>
-                <p className="text-sm font-400 text-muted-foreground mt-1 leading-relaxed">Our survey team will assess your openings, evaluate your wall construction, and recommend the optimal product for each location, free of charge.</p>
+                <p className="text-base font-400 text-muted-foreground mt-1 leading-relaxed">Our survey team will assess your openings, evaluate your wall construction, and recommend the optimal product for each location, free of charge.</p>
               </div>
-              <Link href="/book-survey" className="btn-primary text-sm shrink-0 whitespace-nowrap">
+              <Link href="/#contact" className="btn-primary text-base shrink-0 whitespace-nowrap">
                 Book Free Survey <ArrowRight />
               </Link>
             </FadeUp>
@@ -426,26 +412,23 @@ export default function AboutPage() {
               </p>
             </FadeUp>
 
-            <div className="flex flex-col gap-0">
+            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 sm:gap-5">
               {STEPS.map((step, i, arr) => (
                 <FadeUp key={step.n} delay={i * 0.07}>
-                  <div className="flex gap-6 pb-10 last:pb-0">
-                    <div className="flex flex-col items-center shrink-0">
-                      <div className="w-10 h-10 rounded-full border-2 border-primary bg-primary/8 flex items-center justify-center z-10 shrink-0">
-                        <span className="text-[11px] font-800 text-primary">{step.n}</span>
+                  <div className="relative flex flex-col gap-4 p-5 sm:p-6 rounded-2xl border border-border/60 bg-card hover:border-primary/30 hover:shadow-md transition-all duration-300 group h-full">
+                    <div className="flex items-center justify-between">
+                      <div className="w-11 h-11 rounded-xl bg-primary/8 border border-primary/15 flex items-center justify-center shrink-0">
+                        <span className="text-base font-800 text-primary">{step.n}</span>
                       </div>
-                      {i < arr.length - 1 && <div className="flex-1 w-px bg-border/50 mt-2" />}
+                      <span className="text-xs font-600 text-primary bg-primary/8 border border-primary/15 px-2.5 py-1 rounded-full">
+                        {step.time}
+                      </span>
                     </div>
-
-                    <div className="pt-1.5 pb-2 flex-1">
-                      <div className="flex items-start justify-between gap-4 flex-wrap">
-                        <p className="text-base font-700 text-foreground">{step.title}</p>
-                        <span className="text-xs font-600 text-primary bg-primary/8 border border-primary/15 px-2.5 py-1 rounded-full shrink-0">
-                          {step.time}
-                        </span>
-                      </div>
-                      <p className="text-sm sm:text-base font-400 text-muted-foreground mt-2 leading-relaxed max-w-xl">{step.desc}</p>
+                    <div className="flex flex-col gap-2 flex-1">
+                      <p className="text-lg font-700 text-foreground leading-snug">{step.title}</p>
+                      <p className="text-base font-400 text-muted-foreground leading-relaxed">{step.desc}</p>
                     </div>
+                    <div className="absolute bottom-0 left-5 right-5 h-px bg-primary/0 group-hover:bg-primary/20 transition-colors duration-300 rounded-full" />
                   </div>
                 </FadeUp>
               ))}
@@ -468,7 +451,7 @@ export default function AboutPage() {
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-8">
               {CITIES.map((city, i) => (
                 <FadeUp key={city.name} delay={i * 0.05}>
-                  <div className="flex flex-col gap-1.5 p-5 rounded-2xl bg-background border border-border/60 h-full">
+                  <div className="flex flex-col gap-1.5 p-5 rounded-2xl bg-card border border-border/60 h-full">
                     <div className="w-8 h-8 rounded-xl bg-primary/10 border border-primary/15 flex items-center justify-center">
                       <MapPinIcon className="size-4 text-primary" />
                     </div>
@@ -483,9 +466,9 @@ export default function AboutPage() {
               <div className="p-6 rounded-2xl bg-card border border-border/60 flex flex-col sm:flex-row sm:items-center gap-4">
                 <div className="flex-1">
                   <p className="text-base font-700 text-foreground">Not in the list? We still cover you.</p>
-                  <p className="text-sm font-400 text-muted-foreground mt-1 leading-relaxed">We regularly install in tier-2 cities and smaller markets on project-minimum orders. Call us to discuss your location and if we can reach you, we will.</p>
+                  <p className="text-base font-400 text-muted-foreground mt-1 leading-relaxed">We regularly install in tier-2 cities and smaller markets on project-minimum orders. Call us to discuss your location and if we can reach you, we will.</p>
                 </div>
-                <a href="tel:+919999999999" className="btn-primary text-sm shrink-0 whitespace-nowrap">
+                <a href="tel:+917371073711" className="btn-primary text-base shrink-0 whitespace-nowrap">
                   Call to Check <ArrowRight />
                 </a>
               </div>
@@ -514,7 +497,7 @@ export default function AboutPage() {
                     </div>
                     <div>
                       <p className="text-base font-700 text-foreground">{c.label}</p>
-                      <p className="text-sm font-400 text-muted-foreground mt-1 leading-relaxed">{c.desc}</p>
+                      <p className="text-base font-400 text-muted-foreground mt-1 leading-relaxed">{c.desc}</p>
                     </div>
                   </div>
                 </FadeUp>
@@ -525,9 +508,9 @@ export default function AboutPage() {
               <div className="p-6 rounded-2xl bg-card border border-border/60 flex flex-col sm:flex-row sm:items-center gap-4">
                 <div className="flex-1">
                   <p className="text-base font-700 text-foreground">Need technical documentation for a building permit or green rating?</p>
-                  <p className="text-sm font-400 text-muted-foreground mt-1 leading-relaxed">We provide structural calculations (IS 875 Part 3), test certificates, U-Value data sheets, and SHGC reports with every order at no extra cost. Ready for submission on the day of your order confirmation.</p>
+                  <p className="text-base font-400 text-muted-foreground mt-1 leading-relaxed">We provide structural calculations (IS 875 Part 3), test certificates, U-Value data sheets, and SHGC reports with every order at no extra cost. Ready for submission on the day of your order confirmation.</p>
                 </div>
-                <Link href="/homepage#contact" className="btn-primary text-sm shrink-0 whitespace-nowrap">
+                <Link href="/#contact" className="btn-primary text-base shrink-0 whitespace-nowrap">
                   Request Documents <ArrowRight />
                 </Link>
               </div>
@@ -553,7 +536,7 @@ export default function AboutPage() {
                     <span className="text-5xl font-800 text-primary/10 leading-none tracking-tight">{item.n}</span>
                     <div>
                       <p className="text-base font-700 text-foreground">{item.title}</p>
-                      <p className="text-sm font-400 text-muted-foreground mt-2 leading-relaxed">{item.desc}</p>
+                      <p className="text-base font-400 text-muted-foreground mt-2 leading-relaxed">{item.desc}</p>
                     </div>
                   </div>
                 </FadeUp>
@@ -575,7 +558,7 @@ export default function AboutPage() {
                     <div>
                       <p className="text-base font-700 text-foreground">{c.title}</p>
                       {c.lines.map((l) => (
-                        <p key={l} className="text-sm font-400 text-muted-foreground mt-0.5">{l}</p>
+                        <p key={l} className="text-base font-400 text-muted-foreground mt-0.5">{l}</p>
                       ))}
                     </div>
                   </div>
@@ -602,10 +585,7 @@ export default function AboutPage() {
             </FadeUp>
 
             <FadeUp delay={0.1} className="flex flex-col sm:flex-row gap-3 shrink-0">
-              <Link href="/book-survey" className="inline-flex items-center gap-2 bg-white text-primary font-700 px-6 py-3 rounded-xl hover:bg-white/90 transition-colors duration-200 text-sm whitespace-nowrap">
-                Book a Survey <ArrowRight />
-              </Link>
-              <a href="tel:+919999999999" className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl border border-white/30 text-sm font-500 text-white hover:bg-white/10 transition-colors duration-200 whitespace-nowrap">
+              <a href="tel:+917371073711" className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl border border-white/30 text-base font-500 text-white hover:bg-white/10 transition-colors duration-200 whitespace-nowrap">
                 Call Us
               </a>
             </FadeUp>

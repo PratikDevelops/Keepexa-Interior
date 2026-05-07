@@ -363,7 +363,7 @@ export default function BeforeAfterSection() {
   const [activeIdx, setActiveIdx] = useState(0);
 
   return (
-    <section id="transformations" className="py-16 sm:py-24 lg:py-32 bg-background border-b border-border/50">
+    <section id="transformations" className="py-6 sm:py-10 lg:py-16 bg-background border-b border-border/50">
       <div className="max-w-5xl mx-auto px-5 sm:px-8">
 
         {/* Header */}

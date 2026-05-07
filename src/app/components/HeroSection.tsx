@@ -29,7 +29,7 @@ const heroImages = [
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center pt-20 pb-16 overflow-hidden bg-background">
+    <section className="relative min-h-screen flex items-center pt-8 pb-6 sm:pt-12 sm:pb-8 lg:pt-12 lg:pb-8 overflow-hidden bg-background">
       {/* Subtle background gradient */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-0 right-0 w-[300px] sm:w-[600px] h-[300px] sm:h-[600px] bg-accent/5 rounded-full blur-[120px]" />
@@ -44,7 +44,7 @@ export default function HeroSection() {
           transition={{ duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] }}>
 
           {/* Status badge */}
-          <div className="mt-6 sm:mt-0 inline-flex items-center gap-2 self-start glass-card px-3.5 py-2 rounded-full border border-border/80">
+          <div className="mt-20 sm:mt-0 inline-flex items-center gap-2 self-start glass-card px-3.5 py-2 rounded-full border border-border/80">
             <span className="relative flex h-2 w-2">
               <span className="animate-ping-slow absolute inline-flex h-full w-full rounded-full bg-accent opacity-75" />
               <span className="relative inline-flex rounded-full h-2 w-2 bg-primary" />
@@ -68,8 +68,8 @@ export default function HeroSection() {
               Start Customising
               <Icon name="ArrowRightIcon" size={16} />
             </Link>
-            <Link href="/gallery" className="btn-secondary justify-center sm:justify-start">
-              View Projects
+            <Link href="/#products" className="btn-secondary justify-center sm:justify-start">
+              View Products
             </Link>
           </div>
 

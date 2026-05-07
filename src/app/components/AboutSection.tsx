@@ -48,10 +48,10 @@ export default function AboutSection() {
   const stepsInView = useInView(stepsRef, { once: true, margin: '-60px' });
 
   return (
-    <section id="about" className="py-16 sm:py-24 lg:py-32 bg-background">
+    <section id="about" className="py-6 sm:py-10 lg:py-16 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         {/* Brand story */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center mb-16 sm:mb-24 lg:mb-32">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center mb-8 sm:mb-12 lg:mb-16">
           <motion.div
             ref={ref}
             className="flex flex-col gap-6"

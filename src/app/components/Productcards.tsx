@@ -503,7 +503,7 @@ export default function ProductCards() {
   const rest = allFiltered.filter((p) => !p.featured);
 
   return (
-    <section id="products" className="py-16 sm:py-24 lg:py-32 bg-background">
+    <section id="products" className="py-6 sm:py-10 lg:py-16 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
 
         {/* ── Header ── */}

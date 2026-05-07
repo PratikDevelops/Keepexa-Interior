@@ -63,13 +63,13 @@ export default function WhyChooseUs() {
   const tableInView = useInView(tableRef, { once: true, margin: '-60px' });
 
   return (
-    <section id="why-choose-us" className="py-16 sm:py-24 lg:py-32 bg-background">
+    <section id="why-choose-us" className="py-6 sm:py-10 lg:py-16 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
 
         {/* Section header */}
         <motion.div
           ref={headRef}
-          className="text-center mb-12 sm:mb-16 lg:mb-20"
+          className="text-center mb-6 sm:mb-8 lg:mb-12"
           initial={{ opacity: 0, y: 20 }}
           animate={headInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7 }}
@@ -84,7 +84,7 @@ export default function WhyChooseUs() {
         </motion.div>
 
         {/* Reasons grid */}
-        <div ref={cardsRef} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 mb-16 sm:mb-24 lg:mb-32">
+        <div ref={cardsRef} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 mb-8 sm:mb-12 lg:mb-16">
           {reasons.map((reason, i) => (
             <motion.div
               key={reason.title}

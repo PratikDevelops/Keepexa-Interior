@@ -470,7 +470,18 @@ function QuoteForm({
                       <label className="text-xs font-700 text-muted-foreground uppercase tracking-wide block mb-1.5">City *</label>
                       <select className={selectClass} value={form.city} onChange={(e) => setForm({ ...form, city: e.target.value })} required>
                         <option value="">Select your city</option>
-                        {['Mumbai', 'Delhi NCR', 'Bengaluru', 'Hyderabad', 'Chennai', 'Ahmedabad', 'Kolkata', 'Jaipur', 'Chandigarh', 'Surat', 'Nagpur', 'Other'].map((c) => (
+                        {[
+                          'Mumbai', 'Delhi NCR', 'Bengaluru', 'Hyderabad', 'Chennai',
+                          'Kolkata', 'Pune', 'Ahmedabad', 'Jaipur', 'Surat',
+                          'Lucknow', 'Kanpur', 'Nagpur', 'Indore', 'Thane',
+                          'Bhopal', 'Visakhapatnam', 'Patna', 'Vadodara', 'Ghaziabad',
+                          'Ludhiana', 'Agra', 'Nashik', 'Faridabad', 'Meerut',
+                          'Rajkot', 'Varanasi', 'Srinagar', 'Aurangabad', 'Dhanbad',
+                          'Amritsar', 'Navi Mumbai', 'Allahabad (Prayagraj)', 'Howrah',
+                          'Ranchi', 'Gwalior', 'Jabalpur', 'Coimbatore', 'Vijayawada',
+                          'Jodhpur', 'Madurai', 'Raipur', 'Kota', 'Guwahati',
+                          'Chandigarh', 'Other'
+                        ].map((c) => (
                           <option key={c} value={c}>{c}</option>
                         ))}
                       </select>
@@ -607,8 +618,8 @@ export default function ConfiguratorMain() {
                 key={cat.id}
                 onClick={() => handleCategoryChange(cat.id)}
                 className={`flex items-center gap-2 px-4 sm:px-5 py-2.5 rounded-xl text-sm font-700 transition-all duration-200 ${category === cat.id
-                    ? 'bg-white text-primary shadow-soft border border-border/60'
-                    : 'text-muted-foreground hover:text-foreground'
+                  ? 'bg-white text-primary shadow-soft border border-border/60'
+                  : 'text-muted-foreground hover:text-foreground'
                   }`}
               >
                 <Icon name={cat.icon as 'WindowIcon'} size={16} />
@@ -694,8 +705,8 @@ export default function ConfiguratorMain() {
                       key={type.id}
                       onClick={() => setConfig({ ...config, windowType: type.id })}
                       className={`p-3 sm:p-4 rounded-2xl border-2 text-left transition-all duration-200 ${config.windowType === type.id
-                          ? 'border-primary bg-primary/5'
-                          : 'border-border/60 hover:border-accent/60 bg-background'
+                        ? 'border-primary bg-primary/5'
+                        : 'border-border/60 hover:border-accent/60 bg-background'
                         }`}
                     >
                       <div className="flex items-start justify-between gap-1">
@@ -762,8 +773,8 @@ export default function ConfiguratorMain() {
                       key={glass.id}
                       onClick={() => setConfig({ ...config, glassType: glass.id })}
                       className={`flex flex-col p-3 sm:p-4 rounded-2xl border-2 transition-all duration-200 text-left ${config.glassType === glass.id
-                          ? 'border-primary bg-primary/5'
-                          : 'border-border/60 hover:border-accent/60 bg-background'
+                        ? 'border-primary bg-primary/5'
+                        : 'border-border/60 hover:border-accent/60 bg-background'
                         }`}
                     >
                       <div className="flex items-center justify-between mb-1">
@@ -793,8 +804,8 @@ export default function ConfiguratorMain() {
                     >
                       <div
                         className={`w-9 h-9 sm:w-10 sm:h-10 rounded-xl border-2 transition-all duration-200 shadow-soft group-hover:scale-110 ${config.frameColor === color.id
-                            ? 'border-primary ring-2 ring-primary/30 scale-110'
-                            : 'border-border/60'
+                          ? 'border-primary ring-2 ring-primary/30 scale-110'
+                          : 'border-border/60'
                           }`}
                         style={{ backgroundColor: color.hex }}
                       />

@@ -11,14 +11,16 @@ import WhychooseUs from './components/WhychooseUs';
 import Faq from './components/Faq';
 import ProductCards from './components/Productcards';
 import AwardsSection from './components/AwardsSection';
+import HeroSlider from './components/HeroSlider';
 
 export default function HomepagePage() {
   return (
     <div className="flex min-h-screen flex-col overflow-x-hidden">
       <Header />
       
-      <main className="flex-grow w-full space-y-12 md:space-y-24">
-        <HeroSection />
+      <main className="flex-grow w-full space-y-8 sm:space-y-10 md:space-y-8">
+         <HeroSection />  
+        {/* <HeroSlider /> */}
 
         <div className="w-full px-2 sm:px-6 lg:px-8 max-w-7xl mx-auto">
           <FeaturesStorytelling />

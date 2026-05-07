@@ -33,9 +33,7 @@ const navLinks = [
   { label: 'Contact Us',      href: '/#contact' },
 ];
 
-/* ─────────────────────────────────────────────
-   Animated hamburger icon (3 bars → X)
-───────────────────────────────────────────── */
+
 function HamburgerIcon({ open }: { open: boolean }) {
   return (
     <div className="w-5 h-4 flex flex-col justify-between">
@@ -196,7 +194,7 @@ function MobileNavLink({
       <Link
         href={link.href}
         onClick={onClose}
-        className="group flex items-center justify-between py-4 text-base font-500 text-foreground border-b border-border/50 hover:text-primary transition-colors duration-200"
+        className="group flex items-center justify-between py-4 text-sm font-500 text-foreground border-b border-border/50 hover:text-primary transition-colors duration-200"
       >
         <span>{link.label}</span>
         <motion.span
@@ -269,7 +267,7 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2.5 group shrink-0">
             <AppLogo
-              size={140}
+              size={160}
               onClick={() => {}}
               className="transition-transform duration-300 group-hover:scale-105"
             />
@@ -414,9 +412,9 @@ export default function Header() {
                 transition={{ delay: 0.15 }}
               >
                 <span className="block w-4 h-px bg-primary/50" />
-                <span className="text-[10px] font-700 text-muted-foreground uppercase tracking-[0.2em]">
+                {/* <span className="text-[10px] font-700 text-muted-foreground uppercase tracking-[0.2em]">
                   Navigation
-                </span>
+                </span> */}
               </motion.div>
 
               {/* Nav links */}

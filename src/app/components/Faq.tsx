@@ -198,7 +198,7 @@ function AccordionItem({
         <div className="flex items-start gap-3 min-w-0">
           {/* Category dot */}
           <div
-            className={`mt-0.5 w-1.5 h-1.5 rounded-full shrink-0 transition-colors duration-200 ${
+            className={`mt-2 w-1.5 h-1.5 rounded-full shrink-0 transition-colors duration-200 ${
               isOpen ? 'bg-primary' : 'bg-border'
             }`}
           />
@@ -261,7 +261,7 @@ export default function Faq() {
   const toggle = (id: string) => setOpenId((prev) => (prev === id ? null : id));
 
   return (
-    <section id="faq" className="py-16 sm:py-24 lg:py-32 bg-background">
+    <section id="faq" className="py-6 sm:py-10 lg:py-16 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
 
         {/* Header */}

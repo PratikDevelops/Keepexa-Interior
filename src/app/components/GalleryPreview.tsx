@@ -46,7 +46,7 @@ export default function GalleryPreview() {
   const inView = useInView(ref, { once: true, margin: '-80px' });
 
   return (
-    <section className="py-16 sm:py-24 lg:py-28 bg-secondary/40">
+    <section className="py-6 sm:py-10 lg:py-16 bg-secondary/40">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <motion.div
           ref={ref}

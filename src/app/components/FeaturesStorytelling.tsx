@@ -50,7 +50,7 @@ const features = [
 }];
 
 
-function FeatureRow({ feature, index }: {feature: typeof features[0];index: number;}) {
+function FeatureRow({ feature, index }: { feature: typeof features[0]; index: number }) {
   const ref = useRef<HTMLDivElement>(null);
   const inView = useInView(ref, { once: true, margin: '-80px' });
 
@@ -58,22 +58,24 @@ function FeatureRow({ feature, index }: {feature: typeof features[0];index: numb
     <div
       ref={ref}
       id={feature.id}
-      className={`flex flex-col ${feature.reverse ? 'lg:flex-row-reverse' : 'lg:flex-row'} gap-8 lg:gap-16 items-center`}>
-      
+      // FIXED: Changed the closing " to a backtick `
+      className={`flex flex-col ${feature.reverse ? 'lg:flex-row-reverse' : 'lg:flex-row'} gap-6 sm:gap-8 lg:gap-8 items-center`}
+    >
       {/* Image Side */}
       <motion.div
         className="w-full lg:w-1/2"
         initial={{ opacity: 0, x: feature.reverse ? 40 : -40 }}
         animate={inView ? { opacity: 1, x: 0 } : {}}
-        transition={{ duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] }}>
-        
+        transition={{ duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] }}
+      >
         <div className="relative rounded-3xl overflow-hidden aspect-[4/3] shadow-strong group">
           <AppImage
             src={feature.image}
             alt={feature.imageAlt}
             fill
-            className="object-cover transition-transform duration-700 group-hover:scale-103" />
-          
+            className="object-cover transition-transform duration-700 group-hover:scale-103"
+          />
+
           <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent" />
           {/* Stat overlay */}
           <div className="absolute bottom-5 left-5 glass-card px-5 py-4 rounded-2xl">
@@ -90,8 +92,8 @@ function FeatureRow({ feature, index }: {feature: typeof features[0];index: numb
         className="w-full lg:w-1/2 flex flex-col gap-5"
         initial={{ opacity: 0, x: feature.reverse ? -40 : 40 }}
         animate={inView ? { opacity: 1, x: 0 } : {}}
-        transition={{ duration: 0.8, delay: 0.15, ease: [0.25, 0.46, 0.45, 0.94] }}>
-        
+        transition={{ duration: 0.8, delay: 0.15, ease: [0.25, 0.46, 0.45, 0.94] }}
+      >
         <div className="flex items-center gap-2.5">
           <div className="w-9 h-9 rounded-xl bg-primary/8 flex items-center justify-center">
             <Icon name={feature.icon as 'SpeakerXMarkIcon'} size={18} className="text-primary" />
@@ -112,18 +114,19 @@ function FeatureRow({ feature, index }: {feature: typeof features[0];index: numb
             Technical Specification
           </p>
           <div className="flex flex-wrap gap-2">
-            {feature.detail.split(' · ').map((spec) =>
-            <span
-              key={spec}
-              className="text-xs font-500 text-foreground bg-white px-3 py-1.5 rounded-lg border border-border/60 shadow-soft">
+            {feature.detail.split(' · ').map((spec) => (
+              <span
+                key={spec}
+                className="text-xs font-500 text-foreground bg-white px-3 py-1.5 rounded-lg border border-border/60 shadow-soft"
+              >
                 {spec}
               </span>
-            )}
+            ))}
           </div>
         </div>
       </motion.div>
-    </div>);
-
+    </div>
+  );
 }
 
 export default function FeaturesStorytelling() {
@@ -131,11 +134,11 @@ export default function FeaturesStorytelling() {
   const headerInView = useInView(headerRef, { once: true });
 
   return (
-    <section id="features" className="py-16 sm:py-24 lg:py-32 bg-background">
+    <section id="features" className="py-6 sm:py-10 lg:py-16 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <motion.div
           ref={headerRef}
-          className="text-center mb-14 lg:mb-28"
+          className="text-center mb-6 sm:mb-8 lg:mb-16"
           initial={{ opacity: 0, y: 24 }}
           animate={headerInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7 }}>
@@ -149,7 +152,7 @@ export default function FeaturesStorytelling() {
           </p>
         </motion.div>
 
-        <div className="flex flex-col gap-16 lg:gap-28">
+        <div className="flex flex-col gap-6 sm:gap-8 lg:gap-16">
           {features.map((feature, index) =>
           <FeatureRow key={feature.id} feature={feature} index={index} />
           )}
@@ -157,4 +160,4 @@ export default function FeaturesStorytelling() {
       </div>
     </section>);
 
-}
+  }

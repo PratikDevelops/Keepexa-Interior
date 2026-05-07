@@ -1115,16 +1115,16 @@ export default function ProductDetailPage({ slug }: { slug: string }) {
       )}
 
       {/* ── CTA BANNER ── */}
-      <section ref={ctaRef} className="bg-foreground py-16 sm:py-20">
+      <section ref={ctaRef} className="bg-primary py-16 sm:py-20">
         <motion.div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
           initial={{ opacity: 0, y: 20 }} animate={ctaView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.6 }}>
           <div className="flex flex-col sm:flex-row items-center justify-between gap-8">
             <div>
-              <p className="section-label mb-2">Ready to Order?</p>
+              <p className="section-label text-white mb-2">Ready to Order?</p>
               <h2 className="text-2xl sm:text-3xl font-800 text-white leading-tight">
                 Get your {product.name} quote today.
               </h2>
-              <p className="text-sm text-muted-foreground/70 mt-2 max-w-md">
+              <p className="text-sm text-white mt-2 max-w-md">
                 Our specialists visit, measure, and recommend — completely free. No obligation, no pressure.
               </p>
             </div>

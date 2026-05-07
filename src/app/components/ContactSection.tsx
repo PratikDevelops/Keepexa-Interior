@@ -48,7 +48,7 @@ export default function ContactSection() {
     'w-full h-12 px-4 rounded-xl border border-border/80 bg-white text-foreground text-sm placeholder:text-muted-foreground/60 focus:outline-none focus:ring-2 focus:ring-accent/40 focus:border-accent transition-all duration-200';
 
   return (
-    <section id="contact" className="py-16 sm:py-24 lg:py-28 bg-background">
+    <section id="contact" className="py-6 sm:py-10 lg:py-16 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-start">
           

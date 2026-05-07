@@ -43,11 +43,11 @@ export default function TestimonialsSection() {
   const ctaInView = useInView(ctaRef, { once: true, margin: '-60px' });
 
   return (
-    <section className="py-16 sm:py-24 lg:py-28 bg-secondary/40">
+    <section className="py-6 sm:py-10 lg:py-16 bg-secondary/40">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <motion.div
           ref={ref}
-          className="text-center mb-10 sm:mb-14"
+          className="text-center mb-6 sm:mb-8"
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7 }}>
